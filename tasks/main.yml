@@ -37,5 +37,5 @@
   include: teardown_iptables.yml
   when: amq_broker_skip_iptables is defined and amq_broker_skip_iptables != true and amq_broker_perform_teardown is defined and amq_broker_perform_teardown == true
 
-- name: Write deployment configuration to facts
-  include: write_amq_facts.yml
+# - name: Write deployment configuration to facts
+#  include: write_amq_facts.yml
